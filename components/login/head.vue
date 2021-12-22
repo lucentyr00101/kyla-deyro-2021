@@ -1,11 +1,16 @@
 <template>
-  <v-container>
+  <div>
     <v-row>
       <v-col class="text-center">
         <img class="twitter-icon-blue" :src="twtBlue" alt="twitter-blue">
       </v-col>
     </v-row>
-  </v-container>
+    <v-row>
+      <v-col class="text-center">
+        <span class="head">To get started, first enter your phone, email, or @username</span>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -19,3 +24,9 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+.head
+  font-weight bold
+  font-size 22px
+</style>
