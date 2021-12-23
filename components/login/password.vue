@@ -3,9 +3,19 @@
     <v-row>
       <v-col>
         <v-text-field
-          v-model="userInput"
+          :value="userName"
           placeholder="Phone, email, or username"
-          :rules="userNameRules"
+          hide-details="auto"
+          disabled
+        />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-text-field
+          v-model="password"
+          placeholder="Password"
+          :rules="passwordRules"
           hide-details="auto"
         />
       </v-col>
@@ -27,7 +37,7 @@
 </template>
 
 <script>
-import { userName, userNameRules } from '@/utils/meta/login'
+import { passwordChAnswer, passwordRules, userName } from '@/utils/meta/login'
 import ForgotPassword from '@/components/login/forgot-password'
 
 export default {
@@ -35,16 +45,22 @@ export default {
     ForgotPassword
   },
   data: () => ({
-    userInput: ''
+    password: ''
   }),
   computed: {
-    rules () {
-      return userNameRules
+    passwordRules () {
+      return passwordRules
+    },
+    passwordChAnswer () {
+      return passwordChAnswer
+    },
+    userName () {
+      return userName
     }
   },
   methods: {
     validate () {
-      (this.userInput === userName) && this.$emit('success')
+      (this.password === passwordChAnswer) && this.$emit('success')
     }
   }
 }
