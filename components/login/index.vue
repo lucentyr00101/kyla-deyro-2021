@@ -1,7 +1,11 @@
 <template>
   <v-container>
     <login-head />
-    <login-form />
+    <login-form
+      v-if="screen === 'login'"
+      @success="screen = 'password'"
+    />
+    <password-form v-else-if="screen === 'password'" />
   </v-container>
 </template>
 
@@ -12,7 +16,11 @@ import LoginForm from './form'
 export default {
   components: {
     LoginHead,
-    LoginForm
-  }
+    LoginForm,
+    PasswordForm: () => import('./password')
+  },
+  data: () => ({
+    screen: 'login'
+  })
 }
 </script>

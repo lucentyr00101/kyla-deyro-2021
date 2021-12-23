@@ -1,9 +1,17 @@
 <template>
   <div>
-    <v-fade-transition>
-      <splash-screen v-if="showSplash" />
-      <login v-else />
-    </v-fade-transition>
+    <template v-if="showSplash">
+      <v-fade-transition hide-on-leave>
+        <splash-screen />
+      </v-fade-transition>
+    </template>
+    <template v-else>
+      <v-slide-x-transition>
+        <login />
+      </v-slide-x-transition>
+    </template>
+  </div>
+</template>
   </div>
 </template>
 
@@ -14,7 +22,7 @@ export default {
     Login: () => import('@/components/login')
   },
   data: () => ({
-    timer: 0
+    timer: 10
   }),
   computed: {
     showSplash () {

@@ -16,16 +16,31 @@
       text
       rounded="pill"
     >
-      Solve for x: 2x + 3 = 17
+      <p class="mb-0">
+        Username: {{ userName }}
+      </p>
+      <p class="mb-0">
+        Password: {{ passwordChallenge }}
+      </p>
     </v-snackbar>
   </div>
 </template>
 
 <script>
+import { userName, passwordChallenge } from '@/utils/meta/login'
+
 export default {
   data: () => ({
     snackbar: false
-  })
+  }),
+  computed: {
+    userName () {
+      return userName
+    },
+    passwordChallenge () {
+      return passwordChallenge
+    }
+  }
 }
 </script>
 
