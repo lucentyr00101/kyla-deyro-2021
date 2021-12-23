@@ -5,7 +5,7 @@
         <v-text-field
           v-model="userInput"
           placeholder="Phone, email, or username"
-          :rules="userNameRules"
+          :rules="rules"
           hide-details="auto"
         />
       </v-col>
