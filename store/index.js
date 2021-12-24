@@ -1,6 +1,6 @@
 export default {
   state: () => ({
-    loggedIn: false
+    loggedIn: true
   }),
   mutations: {
     setAuth (state, payload) {
