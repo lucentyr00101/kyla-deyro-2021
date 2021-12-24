@@ -80,6 +80,7 @@ export default {
   build: {
   },
   router: {
+    middleware: ['route'],
     base: '/kyla-deyro-2021/'
   }
 }
