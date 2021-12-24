@@ -17,6 +17,7 @@
           placeholder="Password"
           :rules="passwordRules"
           hide-details="auto"
+          autofocus
         />
       </v-col>
     </v-row>
