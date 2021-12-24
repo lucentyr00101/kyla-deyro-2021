@@ -1,11 +1,11 @@
 <template>
-  <v-row align-content="space-between">
+  <v-row id="homeHead" align-content="space-between">
     <v-col>
       <v-avatar
         color="twitter-primary"
-        size="35"
+        size="30"
       >
-        KD
+        <img src="@/assets/images/kd-dp.jpeg">
       </v-avatar>
     </v-col>
     <v-col class="d-flex align-center justify-center">
@@ -28,3 +28,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+#homeHead
+  border-bottom 1px solid rgb(47, 51, 54)
+</style>
