@@ -5,7 +5,10 @@
       v-if="screen === 'login'"
       @success="screen = 'password'"
     />
-    <password-form v-else-if="screen === 'password'" />
+    <password-form
+      v-else-if="screen === 'password'"
+      @success="success"
+    />
   </v-container>
 </template>
 
@@ -21,6 +24,12 @@ export default {
   },
   data: () => ({
     screen: 'login'
-  })
+  }),
+  methods: {
+    async success () {
+      await this.$store.commit('setAuth', true)
+      this.$router.push({ name: 'home' })
+    }
+  }
 }
 </script>

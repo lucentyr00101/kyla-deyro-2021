@@ -22,7 +22,7 @@ export default {
     Login: () => import('@/components/login')
   },
   data: () => ({
-    timer: 10
+    timer: 0
   }),
   computed: {
     showSplash () {
