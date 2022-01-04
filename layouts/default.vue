@@ -9,23 +9,26 @@
           <Nuxt />
         </v-container>
       </div>
+      <bottom-nav />
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HomeHead from '@/components/home/head'
+import BottomNav from '@/components/bottom-nav'
 
 export default {
   components: {
-    HomeHead
+    HomeHead,
+    BottomNav
   }
 }
 </script>
 
 <style lang="stylus" scoped>
 .height
-  max-height 92vh
+  max-height 88vh
   overflow-y auto
   overflow-x hidden
 .main-wrapper
