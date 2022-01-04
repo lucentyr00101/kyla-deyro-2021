@@ -1,6 +1,7 @@
 export default function ({ store, route, ...rest }) {
   const authRoutes = [
-    'home'
+    'home',
+    'happy-birthday'
   ]
   const { $router } = store
   const { loggedIn } = store.getters
