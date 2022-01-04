@@ -43,7 +43,7 @@ const createBalloons = (num) => {
 
 export default {
   data: () => ({
-    count: 1
+    count: 30
   }),
   mounted () {
     this.startCountdown()
@@ -62,6 +62,9 @@ export default {
 </script>
 
 <style lang="stylus">
+.v-btn:not(.v-btn--round).v-size--default
+  height 55px
+
 .counter, .greet
   font-size 85px
 
