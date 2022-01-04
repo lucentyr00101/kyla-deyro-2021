@@ -28,7 +28,8 @@ export default {
 
 <style lang="stylus" scoped>
 .height
-  max-height 88vh
+  max-height 91vh
+  min-height 91vh
   overflow-y auto
   overflow-x hidden
 .main-wrapper

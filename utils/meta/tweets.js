@@ -7,3 +7,14 @@ export const tweets = [
   { text: 'Actually kulang kulang pa tong ginagawa ko, hahabol ko nalang sa birthday mo, itutuloy ko. Ngayon lang kasi ako nakaisip ng idea. 2 days ago actually, naisip ko na ganito nalang gawin ko. HAHAHAHA', created_at: 'Dec 24, 2021' },
   { text: 'Ayun lang. More Christmasessss pa na magkasama tayo. I love you always. Don\'t forget that!', created_at: 'Dec 24, 2021' }
 ]
+
+export const birthday = [
+  { text: 'Hiii my luvv. Happy birthday.', created_at: 'Jan 4, 2022 21:05:00' },
+  { text: 'Tanda mo na. Wala ka na sa kalendaryo. Naunahan mo pa ako. Ano ba yan.', created_at: 'Jan 4, 2022 21:05:00' },
+  { text: 'I wish you all the best! More birthdays to come!', created_at: 'Jan 4, 2022 21:05:00' },
+  { text: 'I\'m always here if you need anything.', created_at: 'Jan 4, 2022 21:06:00' },
+  { text: 'Sabay natin aabutin yung mga dreams mo.', created_at: 'Jan 4, 2022 21:07:00' },
+  { text: 'Happy happy birthday. Usog na lang natin yung kain pag magaling na ikaw.', created_at: 'Jan 4, 2022 21:09:00' },
+  { text: 'Well palagi naman tayo kumakain sa labas, pero, ayun.', created_at: 'Jan 4, 2022 21:10:00' },
+  { text: 'I love you always. Enjoy your day.', created_at: 'Jan 4, 2022 21:05:00' }
+]
