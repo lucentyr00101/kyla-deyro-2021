@@ -11,22 +11,32 @@
         <span class="gray normal">
           @Lucentyr00101
           ·
-          1h
+          {{ timeFromNow(tweet.created_at) }}
         </span>
       </p>
       <p class="text">
-        {{ text }}
+        {{ tweet.text }}
       </p>
     </v-col>
   </v-row>
 </template>
 
 <script>
+import dayjs from 'dayjs'
+
+const relativeTime = require('dayjs/plugin/relativeTime')
+dayjs.extend(relativeTime)
+
 export default {
   props: {
-    text: {
-      type: String,
-      default: () => 'Sample text only'
+    tweet: {
+      type: Object,
+      default: () => {}
+    }
+  },
+  methods: {
+    timeFromNow (date) {
+      return dayjs(date).fromNow(true)
     }
   }
 }

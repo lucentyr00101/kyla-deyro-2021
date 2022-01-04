@@ -21,6 +21,7 @@ export default {
     SplashScreen: () => import('@/components/splash-screen'),
     Login: () => import('@/components/login')
   },
+  layout: 'auth',
   data: () => ({
     timer: 10
   }),
