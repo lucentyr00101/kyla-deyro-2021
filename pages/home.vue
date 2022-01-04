@@ -1,18 +1,19 @@
 <template>
-  <v-container fluid>
-    <home-head />
-    <tweet v-for="(message, i) in messages" :key="i" :text="message" />
-  </v-container>
+  <div>
+    <tweet
+      v-for="(message, i) in messages"
+      :key="i"
+      :text="message"
+    />
+  </div>
 </template>
 
 <script>
-import HomeHead from '@/components/home/head'
 import Tweet from '@/components/home/tweet'
 import { messages } from '@/utils/meta/tweets'
 
 export default {
   components: {
-    HomeHead,
     Tweet
   },
   computed: {

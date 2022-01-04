@@ -1,5 +1,5 @@
 <template>
-  <v-row id="homeHead" align-content="space-between">
+  <v-row id="homeHead" align-content="space-between" class="mb-3">
     <v-col>
       <v-avatar
         color="twitter-primary"
