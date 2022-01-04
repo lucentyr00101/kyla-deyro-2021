@@ -5,20 +5,23 @@
       :key="i"
       :tweet="message"
     />
+    <balloons />
   </div>
 </template>
 
 <script>
 import Tweet from '@/components/home/tweet'
-import { tweets } from '@/utils/meta/tweets'
+import Balloons from '@/components/balloons'
+import { birthday } from '@/utils/meta/tweets'
 
 export default {
   components: {
-    Tweet
+    Tweet,
+    Balloons
   },
   computed: {
     tweets () {
-      return tweets
+      return birthday
     }
   }
 }
