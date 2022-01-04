@@ -3,8 +3,12 @@
     <v-main>
       <v-container fluid>
         <home-head />
-        <Nuxt />
       </v-container>
+      <div class="main-wrapper height custom-scrollbar">
+        <v-container fluid>
+          <Nuxt />
+        </v-container>
+      </div>
     </v-main>
   </v-app>
 </template>
@@ -18,3 +22,12 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+.height
+  max-height 92vh
+  overflow-y auto
+  overflow-x hidden
+.main-wrapper
+  margin-top 38px
+</style>

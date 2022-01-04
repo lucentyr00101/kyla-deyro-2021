@@ -1,9 +1,9 @@
 <template>
-  <v-row id="homeHead" align-content="space-between" class="mb-3">
+  <v-row id="homeHead" align-content="space-between">
     <v-col>
       <v-avatar
         color="twitter-primary"
-        size="30"
+        size="35"
       >
         <img src="@/assets/images/kd-dp.jpeg">
       </v-avatar>
@@ -32,4 +32,9 @@ export default {
 <style lang="stylus" scoped>
 #homeHead
   border-bottom 1px solid rgb(47, 51, 54)
+  position absolute
+  top 12px
+  width 100%
+  background #121212
+  z-index 10
 </style>
