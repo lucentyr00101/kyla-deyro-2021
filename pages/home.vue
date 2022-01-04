@@ -1,24 +1,24 @@
 <template>
   <div>
     <tweet
-      v-for="(message, i) in messages"
+      v-for="(message, i) in tweets"
       :key="i"
-      :text="message"
+      :tweet="message"
     />
   </div>
 </template>
 
 <script>
 import Tweet from '@/components/home/tweet'
-import { messages } from '@/utils/meta/tweets'
+import { tweets } from '@/utils/meta/tweets'
 
 export default {
   components: {
     Tweet
   },
   computed: {
-    messages () {
-      return messages
+    tweets () {
+      return tweets
     }
   }
 }
